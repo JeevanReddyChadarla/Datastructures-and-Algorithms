@@ -5,3 +5,6 @@ when to use - "Subarrays" - In a given array find the subarray that sum/product 
 intuition - 
 * When the sum is less than 0 (product is -ve) make sum 0 (product as 1).
 * Carrying a -ve sum further will make the sum less
+Example - 
+1. https://leetcode.com/problems/maximum-product-subarray/
+2. https://leetcode.com/problems/maximum-subarray/description/
