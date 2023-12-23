@@ -1,4 +1,4 @@
-package Arrays.PrefixSum.concept;
+package Arrays.PrefixSum;
 
 public class Concept {
 
