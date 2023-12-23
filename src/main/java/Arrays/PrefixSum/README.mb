@@ -1,0 +1,7 @@
+# Header 1 refix Sum - 
+
+concept 1 - kadane's algorithm - 
+when to use - "Subarrays" - In a given array find the subarray that sum/product is the maximum.
+intuition - 
+* When the sum is less than 0 (product is -ve) make sum 0 (product as 1).
+* Carrying a -ve sum further will make the sum less
