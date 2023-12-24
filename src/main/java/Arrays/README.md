@@ -10,3 +10,6 @@ Single element in sorted array - O(log N) - https://leetcode.com/problems/single
 
 Container duplicate II - https://leetcode.com/problems/contains-duplicate-ii/
 
+Range ques - https://leetcode.com/problems/range-sum-query-2d-immutable/
+
+Intersection - https://leetcode.com/problems/intersection-of-two-arrays/description/
