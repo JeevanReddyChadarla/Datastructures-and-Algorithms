@@ -17,3 +17,5 @@ Intersection - https://leetcode.com/problems/intersection-of-two-arrays/descript
 Parenthesis - stack - https://leetcode.com/problems/valid-parentheses/solutions/
 
 Integer to roman conversion - https://leetcode.com/problems/integer-to-roman/description/
+
+IMP - https://leetcode.com/problems/find-common-characters/description/
