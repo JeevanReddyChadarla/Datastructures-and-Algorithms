@@ -3,8 +3,12 @@ package Arrays;
 import java.util.ArrayList;
 import java.util.Arrays;
 
+// Approach : Seive of eratosthenes algorithm
+        // 1. initilise an array with size n+1 and fill it will true
+        // 2. traverse from i=2 to root of N -- check for prime numbers
+        // 3. assign false to all the multiples of i -- this makes the rest of the prime numb as true
+        // 4. print the true index.
 public class printAllPrimeNumTillN {
-
     public static ArrayList<Integer> printAllPrimes(int n){
         ArrayList<Integer> list = new ArrayList<Integer>();
         boolean arr[]=new boolean[n+1];
