@@ -1,0 +1,67 @@
+char ch[]={'d','e','v','a','n'};
+String str=new String(ch);
+OR 
+String str="devan";
+Both are same
+-------------------------------------------------------
+str.length() - Size of string
+-------------------------------------------------------
+The memory size of each character is 2 bytes
+So the length of the string is 2*str.length()
+-------------------------------------------------------
+str.charAt(i) - Access each character in string
+-------------------------------------------------------
+1. contains - true/false - O(1)
+            tells whether a char or sequence of chars is present in the string 
+            eg: str.contains('d') - true
+            str.contains('evan') - true
+            str.contains('q') - false
+            str.contains('vna') - false
+-------------------------------------------------------
+String a = "Jeevan" // variables
+String b = "Jeevan" // variables
+String x = new String("devan") // object
+String y = new String("devan") // object
+
+2. equals - true/false - O(1)
+            equality of two objects based on values
+            i)  .equals compare values
+            ii) == compare addresses
+            eg: str.equals(b) - true 
+            str=="devan" - true
+            x.equals(y) - true
+            x==y - false 
+-------------------------------------------------------
+3. concat - 
+            append string to another string (the original string will not be modified)
+            eg: str.concat("hello") - devan hello
+            System.out.println(str) - devan (the original string will not be modified)
+------------------------------------------------------
+4. replace - 
+            replaces all the occurrences of the given character or sequence of characters in a string
+            returns a new string, (the original string will not be modified)
+            eg: str="devan"
+            str.replace("a","b"); - devbn
+            System.out.println(str); - devan
+            str.replace("dev","abc"); - abcan
+            System.out.println(str); - devan
+
+            eg: str2="aaaab";
+            str2.replace("a","b"); - bbbbb // replaces all the "a" characters
+-----------------------------------------------------
+5. indexOf - 
+            returns int 
+            eg: String str="Jeevan"
+            str.indexOf('J'); - 0
+            str.indexOf('q'); - -1
+            str.indexOf('va'); - 3 // starting from 3
+            str.indexOf('Jvn'); - -1 
+            str.indexOf('e'); - 1 // gives first occurrence
+-----------------------------------------------------
+6. equalsIgnoreCase - 
+            equality of two strings irrespective of case (uppercase and lowercase)
+            eg: Sting str="devan"
+                str.equals("DEVAN") - false
+                str.equalsIgnoreCase("DEVAN") - true
+            
+
