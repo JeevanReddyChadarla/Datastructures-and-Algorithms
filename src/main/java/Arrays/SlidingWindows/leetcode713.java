@@ -3,29 +3,22 @@ package Arrays.SlidingWindows;
 public class leetcode713 {
 	
 	public static int numSubarrayProductLessThanK(int[] nums, int k) {
-        int start=0, end=nums.length-1, count=-1;
-        int i=0,j=0,prod=1;
-//        while(start<=end){
-//            if(nums[start]<k){
-//                count++;
-//            }
-//            start++;
-//        }
-        while(j<=end && i<=end){
-        	count=nums[j]<k?count+1:count;
-            prod*=nums[j];
-            if(prod<k){
-                count++;
-            }else{
-                prod=prod/nums[i];
-            	i++;           
-            }
-            j++;
+		if(k<=1){
+            return 0;
+        }
+        int end=nums.length-1, count=0, i=0,j=0,prod=1;
+        while(j<=end){
+        	prod*=nums[j];
+        	while(prod>=k) {
+        		prod=prod/nums[i];
+        		i++;
+        	}
+        	count+=1+j-i;
+        	j++;
         }
         System.out.println(count);
-        count=count==-1?0:count;
         return count;
-    }
+	}
 
 	public static void main(String[] args) {
 		int arr[]= {10,5,2,6};
