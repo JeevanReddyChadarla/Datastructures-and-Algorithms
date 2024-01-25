@@ -104,7 +104,7 @@ SC: O(1)
 head: 1 -> 2 -> 3 -> 4 -> 5 -> null
 OP: 5
 
-{
+
 int lengthofLL(Node head)
 {
 	Node temp = head; // Dummy Node
@@ -118,7 +118,7 @@ int lengthofLL(Node head)
 
 	return length;
 }
-}
+
 TC: O(N)
 SC: O(1)
 
@@ -129,7 +129,8 @@ IP: 2
 OP: true
 IP: 7
 OP: false
-{
+
+
 boolean searchinLL(Node head, int key)
 {
 	Node temp = head;
@@ -144,7 +145,7 @@ boolean searchinLL(Node head, int key)
 
 	return false;
 }
-}
+
 
 Brownie Points
 
@@ -160,7 +161,7 @@ K = 2
 OP: 20
 K = 4
 OP: 40
-{
+
 int KthNode(Node head, int K)
 {
 	Node temp = head; // Dummy Node
@@ -178,7 +179,7 @@ int KthNode(Node head, int K)
 
 	return -1;
 }
-}
+
 
 ## VVVVVVI 
 ## Q-5: Kth Node from End in a Linked List: SPECIAL
@@ -236,7 +237,7 @@ fast = 40->50
 slow = 30->40: Kth Node from End
 fast = 50->null: STOP
 OP: 40
-{
+
 int KthNodefromEnd(Node head, int K)
 {
 
@@ -258,7 +259,7 @@ int KthNodefromEnd(Node head, int K)
 	// After while loop, fast points to null, slow points to Kth Node from End
 	return slow.data;
 }
-}
+
 
 TC: O(N)
 SC: O(1)
@@ -330,7 +331,7 @@ slow = 20->30: ANS
 fast = 30->40->50: END
 
 OP: 30
-{
+
 class Solution 
 {   
     public ListNode middleNode(ListNode head) 
@@ -355,7 +356,7 @@ class Solution
         return slow;
     }
 }
-}
+
 
 TC: O(N/2)
 SC: O(1)
