@@ -42,10 +42,7 @@ class Node
 	}
 }
 
-Structure of Node of a Linked List:
-
-1  									2   							3
-next: NULL							next: NULL 						next: NULL
+![Alt text](image.png)
 
 
 
@@ -80,12 +77,29 @@ IMP: Every Node will have EXACT SAME Structure
 	data: int
 	next: NULL
 }
+## Create a simple node 
+		ListNode head = new ListNode(1);
+
+		ListNode a = new ListNode(2);
+		
+		ListNode b = new ListNode(3);
+		
+		ListNode c = new ListNode(4);
+		
+		ListNode d = new ListNode(5);
+		
+		head.next=a;
+		a.next=b;
+		b.next=c;
+		c.next=d;
+
 
 ### PROBLEMS
 
 ## 1. TRAVERSAL: Printing Linked List
 head: 1 -> 2 -> 3 -> 4 -> 5 -> null
 OP: [1 2 3 4 5]
+
 
 void printList(Node head)
 {
@@ -97,6 +111,7 @@ void printList(Node head)
 	}
 }
 
+
 OP: [1 2 3 4 5]
 
 TC: O(N)
@@ -105,6 +120,7 @@ SC: O(1)
 ## 2. [Amazon] Count the Number of Nodes in a LL/ Length of LL 
 head: 1 -> 2 -> 3 -> 4 -> 5 -> null
 OP: 5
+
 
 int lengthofLL(Node head)
 {
@@ -120,6 +136,7 @@ int lengthofLL(Node head)
 	return length;
 }
 
+
 TC: O(N)
 SC: O(1)
 
@@ -130,6 +147,7 @@ IP: 2
 OP: true
 IP: 7
 OP: false
+
 
 boolean searchinLL(Node head, int key)
 {
@@ -162,6 +180,7 @@ OP: 20
 K = 4
 OP: 40
 
+
 int KthNode(Node head, int K)
 {
 	Node temp = head; // Dummy Node
@@ -179,6 +198,7 @@ int KthNode(Node head, int K)
 
 	return -1;
 }
+
 
 ## VVVVVVI 
 ## Q-5: Kth Node from End in a Linked List: SPECIAL
@@ -237,6 +257,7 @@ slow = 30->40: Kth Node from End
 fast = 50->null: STOP
 OP: 40
 
+
 int KthNodefromEnd(Node head, int K)
 {
 
@@ -258,6 +279,7 @@ int KthNodefromEnd(Node head, int K)
 	// After while loop, fast points to null, slow points to Kth Node from End
 	return slow.data;
 }
+
 
 TC: O(N)
 SC: O(1)
@@ -329,6 +351,7 @@ slow = 20->30: ANS
 fast = 30->40->50: END
 
 OP: 30
+
 
 class Solution 
 {   
