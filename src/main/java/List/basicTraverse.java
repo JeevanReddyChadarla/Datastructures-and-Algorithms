@@ -6,6 +6,13 @@ import java.util.List;
 import org.w3c.dom.Node;
 
 public class basicTraverse {
+	public static class Node {
+		int data;
+		Node next=null;
+		Node(int data){
+			this.data=data;
+		}
+	}
 //	head: 1 -> 2 -> 3 -> 4 -> 5:null
 	public static void traverseAndPrint(ListNode head){
 		ListNode temp=head;
